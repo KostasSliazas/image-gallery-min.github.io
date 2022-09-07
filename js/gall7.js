@@ -160,7 +160,8 @@
     if (this.imgs && (this.imgs.src === imageSource || this.imgs.src === fullNamePrefixed)) return
     
     // add spin7 class when image src not matches
-    if (fullNamePrefixed !== imageSource) this.insi.className = 'spin7'
+    // if (fullNamePrefixed !== imageSource) 
+    this.insi.className = 'spin7'
     
     // if image exist remove and later recreate it
     this.imgs && this.insi.removeChild(this.imgs)
